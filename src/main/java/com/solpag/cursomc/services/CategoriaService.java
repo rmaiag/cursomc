@@ -24,4 +24,8 @@ public class CategoriaService {
 		obj.setId(null);
 		return catrepo.save(obj);
 	}
+	public Categoria update(Categoria obj) {
+		buscar(obj.getId());
+		return catrepo.save(obj);
+	}
 }
